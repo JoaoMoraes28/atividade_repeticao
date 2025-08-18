@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequencia decrecente</title>
+</head>
+
+<body>
+
+    <script>
+        let primeiro = Number(prompt('Digite o primeiro número'))
+        let segundo = Number(prompt('Digite o segundo número'))
+
+        if (primeiro < segundo) {
+            let first = primeiro
+            primeiro = segundo
+            segundo = first
+        }
+
+        while (segundo <= primeiro) {
+            console.log('Número ' + primeiro)
+            primeiro--
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
