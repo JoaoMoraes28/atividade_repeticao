@@ -4,24 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./app.js" defer></script>
     <title>Tabuada</title>
 </head>
 
 <body>
 
-    <script>
-        let multiplicando = Number(prompt('Digite o multiplicando'))
-        let multiplicador = 10
-        let i = 0
-        let resultado
-        while (i <= multiplicador) {
-            resultado = multiplicando * i
-            console.log(`${multiplicando} x ${i} = ${resultado}`)
-            i++
-        }
-
-
-    </script>
+    
+    <div>
+        <h1>Tabuada</h1>
+        <div>
+            <input id="texto" type="text" placeholder="Digite o multiplicando">
+            <button id="mult">MULTIPLICAR</button>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td id="1"></td>
+                </tr>
+                <tr>
+                    <td id="2"></td>
+                </tr>
+                <tr>
+                    <td id="3"></td>
+                </tr>
+                <tr>
+                    <td id="4"></td>
+                </tr>
+                <tr>
+                    <td id="5"></td>
+                </tr>
+                <tr>
+                    <td id="6"></td>
+                </tr>
+                <tr>
+                    <td id="7"></td>
+                </tr>
+                <tr>
+                    <td id="8"></td>
+                </tr>
+                <tr>
+                    <td id="9"></td>
+                </tr>
+                <tr>
+                    <td id="10"></td>
+                </tr>
+            </table>
+            
+        </div>
+        
+    </div>
 
 </body>
 
