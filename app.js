@@ -2,25 +2,22 @@
 
 var button = document.getElementById('mult')
 var multiplicador = 10
-var i = 0
-var resultado
-var idt = 1
 
 function multiplicar() {
-    let multiplicando = document.getElementById('texto').value
+    let i = 0
+    let resultado
+    let idt = 1
+    let multiplicando
     while (i <= multiplicador) {
+        multiplicando = document.getElementById('texto').value
         resultado = Number(multiplicando) * i
         let imprint = document.getElementById(`${idt}`)
         let mensagem = `${multiplicando} x ${i} = ${resultado}`
-        imprint.textContent = mensagem
+        imprint.innerHTML = ""
+        imprint.innerHTML = mensagem
         i++
         idt++
     }
 }
 
 button.addEventListener('click', multiplicar)
-
-
-
-
-
